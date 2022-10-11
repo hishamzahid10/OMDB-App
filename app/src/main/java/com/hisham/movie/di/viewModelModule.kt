@@ -1,0 +1,12 @@
+package com.hisham.movie.di
+
+import com.hisham.movie.ui.ui.home.NavigationViewModel
+import com.hisham.movie.ui.ui.home.movie.feed.MovieViewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
+import org.koin.core.module.Module
+import org.koin.dsl.module
+
+val viewModelModule: Module = module {
+    viewModel { NavigationViewModel() }
+    viewModel { MovieViewModel(get()) }
+}

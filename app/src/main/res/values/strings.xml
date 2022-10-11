@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:shrinkMode="strict">
+    <string name="app_name">MoviesApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="build_number">1.1.0</string>
+    <string name="something_wrong_internet">Something went wrong</string>
+    <string name="internet_failure_error">Network connection error</string>
+    <string name="see_more"><u>See More</u></string>
+    <string name="discovery_new_places">Discover new movies</string>
+    <string name="no_results">No Results</string>
+    <string name="no_content_found">No Content Found</string>
+</resources>
+
+
+
+

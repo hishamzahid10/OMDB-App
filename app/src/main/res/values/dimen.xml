@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="design_navigation_icon_padding" tools:override="true">20dp</dimen>
+    <dimen name="horizontal_padding_on_nav_drawer">10dp</dimen>
+    <dimen name="small_icon_size">30dp</dimen>
+    <dimen name="arrow_size">25dp</dimen>
+    <dimen name="profile_icon_size">75dp</dimen>
+    <dimen name="top_heading_size">17sp</dimen>
+    <dimen name="sub_heading_size">16sp</dimen>
+    <dimen name="box_height">60dp</dimen>
+
+    <dimen name="partner_text_size">14sp</dimen>
+
+    <dimen name="card_radius">50dp</dimen>
+    <dimen name="tag_rectangle_radius">5dp</dimen>
+
+    <dimen name="popup_radius">20dp</dimen>
+
+    <dimen name="menu_item_padding">10dp</dimen>
+    <dimen name="menu_item_margin">15dp</dimen>
+    <dimen name="menu_item_text_size">13sp</dimen>
+
+    <dimen name="movies_title_margin">15dp</dimen>
+    <dimen name="card_padding">15dp</dimen>
+    <dimen name="card_padding_top">15dp</dimen>
+    <dimen name="card_margin">15dp</dimen>
+
+    <!--  text sizes-->
+    <dimen name="app_title_size">22sp</dimen>
+    <dimen name="movies_title_size">17sp</dimen>
+    <dimen name="content_size">14sp</dimen>
+    <dimen name="tiny_content_size">10sp</dimen>
+    <dimen name="content_size_intro">16sp</dimen>
+
+    <dimen name="feed_img_height">150dp</dimen>
+
+    <dimen name="row_head_size">18sp</dimen>
+    <dimen name="learn_header_size">30sp</dimen>
+    <dimen name="phunds_header_size">20sp</dimen>
+    <dimen name="phunds_program_title_size">22sp</dimen>
+
+
+    <dimen name="toolbar_icon">30dp</dimen>
+
+    <dimen name="interest_margin">20dp</dimen>
+
+    <dimen name="arrow_default_size">25dp</dimen>
+    <dimen name="panel_default_padding">12dp</dimen>
+    <dimen name="content_default_padding">12dp</dimen>
+
+<!--    money goal dimen-->
+    <dimen name="card_height">150dp</dimen>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:shrinkMode="strict" xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#4AABD8</color>
+    <color name="colorPrimaryDark">#F0F0F0</color>
+    <color name="colorAccent">#F0F0F0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="nonSelectColor">#7AFFFFFF</color>
+    <color name="pressed_color">#46000000</color>
+    <color name="hint_color">#31000000</color>
+    <color name="black">#000000</color>
+    <color name="signUpSelectedItemColor">#00C853</color>
+    <color name="green_color">#00C853</color>
+    <color name="signUpNonSelectedItemColor">#4D00C853</color>
+    <color name="error_color">#FB6B6B</color>
+    <color name="active_icon_color">#4AABD8</color>
+    <color name="fade_color">#4100BFA5</color>
+    <color name="clickable_text_color">#00BFA5</color>
+    <color name="line_color">#25000000</color>
+    <color name="fade_line_color">#F0F0F0</color>
+    <color name="pressed_back">#6D000000</color>
+    <color name="light_text_color">#20000000</color>
+    <color name="normal_text_color">#4A4A4A</color>
+
+    <color name="waitlist_background_color">#FAFAFA</color>
+    <color name="contact_color">#EEFFFFFF</color>
+
+    <color name="partner_fade_bottom_color">#659ED2EA</color>
+    <color name="fade_circle">#B44AABD8</color>
+
+    <color name="icon_background_transparent_color">#2700BFA5</color>
+
+    <color name="auth_forgot_color">#4AABD8</color>
+
+
+    <color name="transparent_color">#00000000</color>
+    <color name="interest_text_color">#9B9B9B</color>
+    <color name="fade_text_color">#A3A0A0</color>
+<!--    <color name="fade_text_color">#CAC4C4</color>-->
+    <color name="overlap_color">#94000000</color>
+    <color name="overlap2_color">#80000000</color>
+
+
+
+    <color name="view_background_color">#FAFAFA</color>
+
+
+    <color name="menu_item">#4A4A4A</color>
+    <color name="blue_selector">#4AABD8</color>
+    <color name="fade_blue_selector">#414AABD8</color>
+    <color name="fade_blue_selector1">#2C4AABD8</color>
+    <color name="border_color">#EEEEEE</color>
+    <color name="edittext_border">#C7CAD1</color>
+    <color name="app_background">#edf1f5</color>
+
+    <color name="slide_yellow">#ffdc72</color>
+    <color name="transaction_bg">#FBECC9</color>
+    <color name="start_btn_clr">#DABF6E</color>
+    <color name="done_color">#fae2a9</color>
+    <color name="purple">#2F1533</color>
+    <color name="purple_light">#6747e8</color>
+    <color name="fade_purple">#BDB4E4</color>
+    <color name="blue_dark">#3F51B5</color>
+    <color name="pink">#B34FC3</color>
+    <color name="light_pink">#F18CE0</color>
+    <color name="blue">#20349C</color>
+    <color name="orange">#F8A01E</color>
+    <color name="mustard">#FCCC9F18</color>
+    <color name="parrot">#CDDC39</color>
+    <color name="green">#009688</color>
+    <color name="green_bg">#96E4B9</color>
+    <color name="blood">#55051C</color>
+    <color name="brown">#FD7C4C5A</color>
+    <color name="carousel_not_selected">#DEDEDE</color>
+
+
+    <color name="grey_color">#F7F7F7</color>
+    <color name="dark_grey_color">#AAAAAA</color>
+
+    <color name="money_meaning_bg_grey">#fafafa</color>
+    <color name="did_you_know_section">#EEEEEE</color>
+
+    <color name="title_color">#26315F</color>
+    <color name="subtitle_color">#B9BDC5</color>
+    <color name="text_color">#2E2E2E</color>
+</resources>

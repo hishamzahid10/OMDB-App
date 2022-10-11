@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        applicationId "com.hisham.movie"
+        vectorDrawables.useSupportLibrary = true
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"  // year.month.releaseCountInSpecificMont
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+       // multiDexEnabled true
+    }
+    buildTypes {
+        debug{
+         //   debuggable true
+          //  minifyEnabled true
+           // shrinkResources true
+        }
+        release {
+            minifyEnabled true
+           // shrinkResources true
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+
+    }
+    buildFeatures {
+
+        dataBinding = true
+       // viewBinding true
+
+        // for view binding:
+        // viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    repositories {
+        maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlinVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
+    implementation 'androidx.core:core-ktx:1.2.0'
+
+
+
+    //constraint layout
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerViewVersion"
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+
+    //Architecture Component viewModel
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
+
+
+    //jackson
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    testImplementation project(path: ':app')
+
+    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit2Verson"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofit2ConvertorGsonVerson"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$rootProject.retrofitCoroutineAdapterVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
+
+
+
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlinVersion"
+    implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
+
+
+    // Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0'
+
+
+    // Koin
+    implementation "org.koin:koin-android:$rootProject.koinVersion"
+    implementation "org.koin:koin-androidx-scope:$rootProject.koinVersion"
+    implementation "org.koin:koin-androidx-viewmodel:$rootProject.koinVersion"
+
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+// Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+    // - - ViewModel and LiveData
+    def lifecycle_version = "2.2.0"
+    //noinspection GradleDependency
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    //noinspection GradleDependency
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    //MockWebServer
+    implementation "com.squareup.okhttp3:mockwebserver:$rootProject.okhttpVersion"
+}

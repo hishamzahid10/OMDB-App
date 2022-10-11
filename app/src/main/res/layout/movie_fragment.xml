@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hisham.movie.ui.ui.home.movie.feed.MovieViewModel" />
+    </data>
+    <com.hisham.movie.utils.VerticalSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefresh">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_toLeftOf="@id/iv_menu"
+                android:background="@drawable/tag_style"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:hint="Search"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"/>
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/etSearch"
+                android:layout_alignBottom="@id/etSearch"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSearch"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/robotocondensed_regular"
+                android:text="@string/discovery_new_places"
+                android:textColor="@color/title_color"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_title"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMovie"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        tools:listitem="@layout/row_movie_item" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_results"
+                        android:textColor="@color/fade_text_color"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17sp"
+                        android:id="@+id/no_Results"
+                        android:visibility="gone"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/noContentFoundText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_content_found"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </com.hisham.movie.utils.VerticalSwipeRefreshLayout>
+</layout>
